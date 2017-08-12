@@ -1,0 +1,198 @@
+html, body{
+	height: 100%;
+}
+.nav2{
+	margin-top: 75px;
+	border: none;
+	padding-top: 10px;
+}
+.nav2 li{
+	padding: 0 5%;
+}
+
+.nav-form{
+	padding: 10px;
+}
+
+.landing{
+	height: 80%;
+	background-image: url(/img/ravi2.jpg);
+	background-repeat: repeat;
+	padding: 5%;
+}
+
+.landing p{
+	font-family: Courier, "Lucida Console", monospace;
+	color: #adcefd ;
+	font-size: 20px;
+	text-decoration: bold;
+}
+
+
+.about{
+
+	background-color: #efdeca;
+	padding: 5% 0px;
+}
+
+.leaders{
+	background-color: peachpuff;
+	padding: 5% 0px;
+}
+
+.org{
+	background-color: #efdeca;
+	padding: 5% 0px;
+}
+
+.media{
+	margin-top: 2% !important;
+}
+
+.gal{
+	background-color: peachpuff;
+	padding: 5% 0px;
+}
+
+
+.footer{
+	border-top: 10px solid oldlace;
+	padding: 2% 0%;
+	background-color: linen;
+}
+
+.designer{
+	border-top: 10px solid oldlace;
+	border-radius: 10px;	
+	padding: 2% 0%;
+	background-color: peachpuff;
+}
+
+
+/*Sign up form*/
+.register{
+	padding: 5% 0px;
+	background-color: #fff0f5;
+}
+
+
+/*For the Profile page */
+
+.top{
+	padding-top: 5%;
+}
+
+.news{
+	border: 2px solid #adcefd;
+	padding: 20%;
+	background-image: url(/img/zoo.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+html, body{
+	height: 100%;
+	background-color: green;
+
+}
+nav a:hover{
+	border-bottom: 1px solid blue;
+}
+
+.home{
+	height: 100%;
+	background-image: url(../img/blu.png);
+}
+
+.about{
+
+	background-color: #efdeca;
+	padding: 5% 0px;
+
+}
+
+.org{
+	background-color: oldlace;
+	padding: 5% 0px;
+}
+
+.prog{
+	background-color: #9823ad;
+	padding: 5% 0px;
+}
+.leaders{
+	background-color: peachpuff;
+	padding: 5% 0px;
+}
+
+.footer{
+	border-top: 10px solid oldlace;
+	padding: 2% 0%;
+	background-color: linen;
+}
+
+.designer{
+	border-top: 10px solid oldlace;
+	border-radius: 10px;	
+	padding: 2% 0%;
+	background-color: peachpuff;
+}
+
+
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto; Scrollable contents if viewport is shorter than content.
+}
+
+.work{
+	padding-top: 70px;
+} 
+
+.media{
+	margin-top: 2% !important;
+}
+
+.modal-content{
+	background-color: peachpuff;
+}
+
+
+
+.try{
+	position: fixed;
+	z-index: 1;
+}
+
+
+.try1{
+	position: fixed;
+}
+
+
+
+Form request Tutorial 
+
+.blog{
+	background-color: #eca;
+	border: 2px solid #ace;
+	margin-top: 5%;
+	padding: 5%;
+}
+
+*/
