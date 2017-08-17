@@ -309,36 +309,21 @@ This is some sample text. This is some sample text.
 <dl>
 	<dt>
 		<h4> Meetings</h4>
-		<dd>
-			pray
-		</dd>
-		<dd>
-			pray
-		</dd>
-		<dd> 
-		pray
-		</dd>
+		<dd>pray</dd>
+		<dd>pray</dd>
+		<dd>pray</dd>
 	</dt>
-
 	<dt>
 		<h4>Prayer Requests</h4>
-		<dd>
-			FOS
-		</dd>
-		<dd>
-			FOS
-		</dd>
-		<dd>
-			FOS
-		</dd>
+		<dd>FOS</dd>
+		<dd>FOS</dd>
+		<dd>FOS</dd>
 	</dt> <br>
 	<dt>
 		<button class="btn btn-success">Donate</button>
 	</dt>
+</dl>	
 
-</dl>
-
-	
 </div>
 
 
