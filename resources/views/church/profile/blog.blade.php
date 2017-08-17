@@ -1,6 +1,42 @@
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+@extends('church.master')
+
+@section('contents')
+	<div class="container">
+	<div class="row">
+
+		<div class="col-xs-12 col-sm-5 col-md-5 col-sm-offset-3 col-md-offset-3">
+
+		<h1 class="lead text-center">Publish A Post</h1>
+
+		<hr>
+
+			<form method="POST" action="/blog" class="form-horizontal" role="form">
+				  {{ csrf_field() }}
+
+			      <div class="form-group">
+                  	<label for="category" class="control-label">Category</label>
+                 		 <input type="text" name="category" class="form-control">
+                  </div>
+
+                  <div class="form-group">
+                  	<label for="title" class="control-label">Title</label>
+                 		 <input type="text" name="title" class="form-control">
+                  </div>
+
+                  	<div class="form-group">
+						<label for="body">Body</label>
+							<textarea name="body" class="form-control" rows="3"></textarea>
+					</div>
+
+                  <div class="form-group">
+                  		<button type="submit" class="btn btn-primary">Publish</button>
+                  </div>
+            </form>
+		
+		</div>
+	
+	</div>
+</div>
+
+@endsection
+

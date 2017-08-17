@@ -4,7 +4,10 @@
 Welcome To WESLEY METHODIST CHURCH
 @endsection
 
-@section('nav2')
+
+@section('nav')
+	@include('church/partials.nav')
+
 <div class="nav2 navbar navbar-default" id="nav2">
    <div class="col-md-8 col-md-offset-2">
 	<ul class="list-inline list-unstyled">
@@ -339,4 +342,9 @@ This is some sample text. This is some sample text.
 </div>
 
 
+@endsection
+
+
+@section('footer')
+	@include('church/partials.footer')
 @endsection

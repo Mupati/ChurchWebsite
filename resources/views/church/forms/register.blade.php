@@ -4,6 +4,10 @@
 Register as a Member
 @endsection
 
+@section('nav')
+	@include('church/partials.nav')
+@endsection
+
 @section('contents')
 <div class="register">
 <div class="container">
@@ -50,4 +54,8 @@ Register as a Member
 	</div>
 </div>
 </div>
+@endsection
+
+@section('footer')
+	@include('church/partials.footer')
 @endsection

@@ -4,7 +4,9 @@
 CHURCH BLOG | Read Your Favourite Articles
 @endsection
 
-@section('nav2')
+@section('nav')
+@include('church/partials.nav')
+
 <div class="nav2 navbar navbar-default" id="nav2">
    <div class="col-md-8 col-md-offset-2">
 	<ul class="list-inline list-unstyled">
@@ -117,4 +119,8 @@ CHURCH BLOG | Read Your Favourite Articles
 
 </div>
 
+@endsection
+
+@section('footer')
+	@include('church/partials.footer')
 @endsection
