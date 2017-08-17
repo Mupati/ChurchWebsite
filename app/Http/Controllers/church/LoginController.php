@@ -16,15 +16,10 @@ class LoginController extends Controller
    	$this->validation($request);
    	
       if(Auth::guard('membership')->attempt(['username'=>$request->username,'password'=>$request->pwd])){
-
-      //$members = Membership::all();
-  		
-      return $this->redirect(); //->with(compact('members'));
+      return redirect('/profile'); 
    	       }
           	return back();
   }
-
-
 
    public function validation($request)
    {
@@ -34,14 +29,9 @@ class LoginController extends Controller
         ]);
    }
 
-   protected function redirect(){
-
-   	return view('church/profile.profile');
-   }
-
    public function logout(Request $request)
     {
-        #Auth::guard('membership')->logout();
+        Auth::guard()->logout();
         $request->session()->flush();
         $request->session()->regenerate();
         return redirect('/index');

@@ -19,14 +19,14 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-		<a class="navbar-brand" href="#">Welcome</a>
+		<a class="navbar-brand" href="{{ route('homePage') }}">Wesley Methodist</a>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse">
 	<ul class="nav navbar-nav pull-right">
-			<li><a href="#">Profile</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Forum</a></li>
-			<li><a href="#">Buy</a></li>
+			<li><a href="/profile">Profile</a></li>
+			<li><a href="/profile/blog">Blog</a></li>
+			<li><a href="/profile/forum">Forum</a></li>
+			<li><a href="/profile/store">Store</a></li>
 			<li><a href="{{ route('memberLogout') }}"
                   onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">

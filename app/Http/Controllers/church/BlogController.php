@@ -11,4 +11,25 @@ class BlogController extends Controller
     {
     	return view('church/blog');
     }
+
+
+    public function hymns()
+    {
+    	return view('church/blog');
+    }
+
+
+
+    public function bio()
+    {
+    	return view('church/blog');
+    }
+
+
+    public function testimonies()
+    {
+    	return view('church/blog');
+    }
+
+
 }

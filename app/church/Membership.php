@@ -12,6 +12,11 @@ class Membership extends Authenticatable
   protected $fillable = [
         'name', 'username','phone_number','email','password',
     ];
- */
 
+
+      protected $hidden = [
+        'password', '_token',
+    ];
+ 
+*/
 }

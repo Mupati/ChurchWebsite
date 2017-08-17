@@ -4,8 +4,27 @@ html, body{
 .nav2{
 	margin-top: 75px;
 	border: none;
-	padding-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	z-index: 1300;
+	
 }
+
+.fix-nav2{
+	position: fixed;
+	z-index: 1300px !important;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  #nav2 {
+  	z-index: 1200;
+  }
+}
+
 .nav2 li{
 	padding: 0 5%;
 }
@@ -16,18 +35,22 @@ html, body{
 
 .landing{
 	height: 80%;
-	background-image: url(/img/ravi2.jpg);
-	background-repeat: repeat;
+	/*background-image: url(/img/ravi2.jpg);
+	background-repeat: repeat;*/
+	background-color: #fdf5e6;
 	padding: 5%;
-}
-
-.landing p{
 	font-family: Courier, "Lucida Console", monospace;
-	color: #adcefd ;
-	font-size: 20px;
+	color: #adcefd;
 	text-decoration: bold;
 }
 
+.landing p{
+	font-size: 20px;
+}
+
+.landing h1{
+	font-size: 26x;
+}
 
 .about{
 
@@ -89,6 +112,18 @@ html, body{
 }
 
 
+/*Floating div containing meetings, prayer requests and donate button*/
+.progs{
+	position: fixed;
+	right: 0px;
+	top: 145px;
+	z-index: 1;
+	background-color: blue;
+	border-radius: 10px 0 0 10px;
+	padding: 2%;
+	opacity: 0.5;
+	color: white;
+}
 
 
 

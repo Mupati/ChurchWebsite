@@ -1,5 +1,5 @@
 <!--Header with Navigations-->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav1">
 	<div class="navbar-header">
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
 		<span class="sr-only">Menu</span>

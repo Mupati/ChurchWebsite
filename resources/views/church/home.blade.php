@@ -5,7 +5,7 @@ Welcome To WESLEY METHODIST CHURCH
 @endsection
 
 @section('nav2')
-<div class="nav2 navbar navbar-default">
+<div class="nav2 navbar navbar-default" id="nav2">
    <div class="col-md-8 col-md-offset-2">
 	<ul class="list-inline list-unstyled">
 		<li><a href="#about">ABOUT</a></li>
@@ -29,7 +29,7 @@ Welcome To WESLEY METHODIST CHURCH
 		Awo fofor mba
 	</p>
 	<p>
-<a href="/register-member"><input type="button" class="btn btn-primary btn-lg" value="Click to Register"></a> 
+<a href="{{route('registrationForm')}}"><input type="button" class="btn btn-primary btn-lg" value="Click to Register"></a> 
 </p>
 			</div>
 		</div>
@@ -301,5 +301,42 @@ This is some sample text. This is some sample text.
 		<em>I guess you understand why I call myself <strong>Bra Krox Effectx</strong>(The Cross' Effects)</em>
 	</div>
 </div>
+
+<div class="progs">
+<dl>
+	<dt>
+		<h4> Meetings</h4>
+		<dd>
+			pray
+		</dd>
+		<dd>
+			pray
+		</dd>
+		<dd> 
+		pray
+		</dd>
+	</dt>
+
+	<dt>
+		<h4>Prayer Requests</h4>
+		<dd>
+			FOS
+		</dd>
+		<dd>
+			FOS
+		</dd>
+		<dd>
+			FOS
+		</dd>
+	</dt> <br>
+	<dt>
+		<button class="btn btn-success">Donate</button>
+	</dt>
+
+</dl>
+
+	
+</div>
+
 
 @endsection
