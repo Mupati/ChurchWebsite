@@ -20,12 +20,12 @@ class ProfileController extends Controller
     	return view('church/profile.index');
     }
 
-
+/*
     public function blog()
     {
     	return view('church/profile.blog');
     }
-
+*/
 
     public function forum()
     {

@@ -13,6 +13,11 @@ use App\church\Membership;
 class RegistrationController extends Controller
 {      
 
+        public function __construct()
+        {
+          $this->middleware('guest:membership');
+        }
+
         public function sign_up() {
 
             return view('church/forms.register');

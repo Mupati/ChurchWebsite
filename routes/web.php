@@ -12,8 +12,10 @@ Route::get('/reset','church\ResetController@index')->name('resetPassword');
 //Profile Page Routes
 Route::get('/profile','church\ProfileController@index');
 
-Route::get('/profile/blog','church\ProfileController@blog');
-Route::post('/profile/blog','church\profile\PostController@blog');
+Route::get('/profile/blog','church\profile\PostController@index');
+Route::post('/profile/blog','church\profile\PostController@store');
+Route::post('/profile/blog/comment','church\profile\CommentsController@store');
+
 
 Route::get('/profile/store','church\ProfileController@store');
 Route::get('/profile/forum','church\ProfileController@forum');
