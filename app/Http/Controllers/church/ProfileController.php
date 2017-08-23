@@ -4,7 +4,7 @@ namespace App\Http\Controllers\church;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\church\Membership;
+use App\Image;
 
 
 class ProfileController extends Controller
@@ -17,7 +17,8 @@ class ProfileController extends Controller
 
     public function index()
     {
-    	return view('church/profile.index');
+        $image = Image::all();
+    	return view('church/profile.index',compact('image'));
     }
 
 /*

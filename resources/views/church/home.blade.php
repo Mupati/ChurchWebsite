@@ -287,6 +287,7 @@ This is some sample text. This is some sample text.
 <!--Carousel of advertisement and logos of all organizations in the church-->
 <div class="gal" id="gal">
 	<div class="container">
+	<div class="row">
 	<h5> FEW POINT FROM RAVI ZACHARIAS' SERMON:<br>
 		<em>(ABSOLUTE TRUTH IN RELATIVE TERMS)</em>
 	 </h5>
@@ -302,6 +303,30 @@ This is some sample text. This is some sample text.
 		</ul>
 		</p>
 		<em>I guess you understand why I call myself <strong>Bra Krox Effectx</strong>(The Cross' Effects)</em>
+
+		</div>
+
+		<div class="row">
+<div class="col-md-8 col-md-offset-2">
+		<form role="form" method="post" action="/image" enctype="multipart/form-data">
+				{{ csrf_field() }}
+			<div class="form-group">
+				<label role="name" class="control-label">Name</label>
+				<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="{{ old('name') }}" required autofocus>
+			</div>
+
+			<div class="form-group">
+				<label for="inputfile">File input</label>
+				<input type="file" id="inputfile" name="image" required>
+				<p class="help-block">Upload Profile Picture</p>
+			</div>
+			<button type="submit" class="btn btn-block btn-success">Submit</button>
+
+			
+		</form>
+			
+		</div>
+		</div>
 	</div>
 </div>
 

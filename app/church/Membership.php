@@ -4,6 +4,7 @@ namespace App\church;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Image;
 
 class Membership extends Authenticatable
 {
@@ -27,6 +28,11 @@ class Membership extends Authenticatable
     public function comments()
     {
     	return $this->hasMany(Comments::class);
+    }
+
+    public function image()
+    {
+        return $this->hasOne(Image::class);
     }
 
 

@@ -23,6 +23,6 @@ $(document).scroll(function(){
 		$('#nav2').css(style2);
 	}
 });
-
+	
 
 });

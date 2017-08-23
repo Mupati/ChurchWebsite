@@ -9,7 +9,6 @@ use App\church\Comments;
 use App\church\Posts;
 use App\church\Membership;
 
-
 class CommentsController extends Controller
 {
 

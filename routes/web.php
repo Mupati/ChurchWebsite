@@ -30,7 +30,9 @@ Route::get('/blog/testimonies','church\BlogController@testimonies');
 
 
 
+//Learning how to upload images
 
+Route::post('/image','ImageController@store');
 
 
 /*

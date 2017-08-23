@@ -1,7 +1,7 @@
 @extends('church.master')
 
 @section('title')
-	Welcome Blogger
+	Welcome
 @endsection
 
 @section('nav')
@@ -41,7 +41,12 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-sm-3 col-md-3 col-lg-3 hidden-xs try">
-		<img src="/img/pumba.jpg" alt="member-img" class="img-responsive img-rounded">
+<!--<a href="#profilePic" title="Upload a Profile Picture" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Some content in Popover on right">
+	<img src="/img/pumba.jpg" alt="member-img" class="img-responsive img-rounded">
+</a>.-->
+
+<a href="#img"><img src="/img/pumba.jpg" class="img-responsive img-rounded"> </a>
+
 				<div class="caption">
 					<h4>Description</h4>
 						<p>He is the Caretakeer of the Church. He has served for
@@ -49,13 +54,25 @@
 				     	</p>
 		    	</div>
 		</div>
+		<div id="img" title="Upload Profile Picture">
 
+		</div>
 		<div class="news col-sm-9 col-md-9 col-lg-9">
 		 <h1>Load newsfeed here</h1>	
+		 <p>
+
+		</p>
 		</div>
+		
 
 	</div>
 </div>
 </div>
 
+@endsection
+
+@section('custom-scripts')
+<script type="text/javascript">
+	$(function () { $("[data-toggle='popover']").popover().tooltip(); });
+</script>
 @endsection

@@ -9,7 +9,14 @@ use App\church\Membership;
 
 
 class LoginController extends Controller
-{
+{ 
+
+
+     public function __construct()
+        {
+          $this->middleware('guest:membership')->except('logout');
+        }
+
 
    public function login(Request $request){
 

@@ -15,10 +15,10 @@
 	<div class="col-md-3">
 	<h4>Contact Us</h4>
 	<ol class="list-inline list-unstyled">
-		<li><a href="www.facebook.com/TheCrossPunchlines17">Facebook</a></li>
-		<li><a href="www.twitter.com/OTK">Twitter</a></li>
-		<li><a href="www.instagram.com/OTK">Instagram</a></li>
-		<li><a href="www.instagram.com/OTK">Whatsapp</a></li>
+		<li><a target="_blank" href="https://www.facebook.com/TheCrossPunchlines17" rel="noopener noreferrer">Facebook</a></li>
+		<li><a href="https://www.twitter.com/OTK">Twitter</a></li>
+		<li><a href="https://www.instagram.com/OTK">Instagram</a></li>
+		<li><a href="https://www.instagram.com/OTK">Whatsapp</a></li>
 	</ol>
 	<p>P. O Box 378<br>
 	   Agona Swedru.<br>

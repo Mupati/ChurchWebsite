@@ -21,6 +21,22 @@ CHURCH BLOG | Read Your Favourite Articles
 
 
 @section('contents')
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+		@if('$posts')
+		 @foreach($posts as $post)
+		 <h4>{{ $post->title}}</h4> <hr> 
+			 <p>{{ $post->body}}</p>
+
+		 @endforeach
+		@endif
+		</div>
+	</div>
+</div>
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-3">
