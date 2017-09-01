@@ -15,10 +15,11 @@ class CreateMembershipsTable extends Migration
     {
         Schema::create('memberships', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
+            $table->string('name');
             $table->string('username')->unique();
-            $table->string('phone_number')->unique();
+            $table->string('phone_number');
             $table->string('email')->unique();
+            $table->string('avatar')->default('avatar.png');
             $table->string('password');
             $table->boolean('is_admin')->default(false);
             $table->timestamps();

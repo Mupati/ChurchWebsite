@@ -106,7 +106,7 @@ return [
 
         'memberships' => [
             'provider' => 'memberships',
-            'table' => 'password_resets',
+            'table' => 'reset_password',
             'expire' => 60,
         ],
     ],

@@ -2,39 +2,30 @@
 
 namespace App\church;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Image;
+use Illuminate\Auth\Notifications\ResetPassword as ResetPasswordNotification;
+
 
 class Membership extends Authenticatable
-{
-  
-/*
-  protected $fillable = [
-        'name', 'username','phone_number','email','password',
-    ];
+{   
+	
+	use Notifiable;    
 
-
-      protected $hidden = [
-        'password', '_token',
-    ];
- 
-*/
     public function posts()
     {
-    	return $this->hasMany(Posts::class);
+    	return $this->hasMany(Posts::class,'memberships_id');
     }
 
     public function comments()
     {
-    	return $this->hasMany(Comments::class);
+    	return $this->hasMany(Comments::class,'memberships_id');
+
     }
 
-    public function image()
-    {
-        return $this->hasOne(Image::class);
-    }
-
-
+    public function sendPasswordResetNotification($token)
+		{
+    		$this->notify(new ResetPasswordNotification($token));
+		}
 
 }

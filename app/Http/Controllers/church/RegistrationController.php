@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Registered;
 
 use App\church\Membership;
+use App\Mail\church\Welcome;
 
 
 class RegistrationController extends Controller
@@ -37,6 +38,8 @@ class RegistrationController extends Controller
             $member->save();      
 
             Auth::guard('membership')->login($member);
+
+            \Mail::to($member)->send(new Welcome);
             
             return redirect('/profile');
           }      

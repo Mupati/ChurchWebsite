@@ -24,7 +24,7 @@
 <input type="password" class="form-control" name="pwd" placeholder="Password" required>
 	</div>
 	<button type="submit" class="btn btn-success">Login</button><br>
-		<a href="/reset" id="nav-link">Forgot your password?</a>
+		<a href="/password/reset" id="nav-link">Forgot your password?</a>
 		</form>
 </div>
 

@@ -23,6 +23,12 @@ $(document).scroll(function(){
 		$('#nav2').css(style2);
 	}
 });
+
+
+$('#pro img').mousemove(function(){
+	$(this).css("background-color","green","opacity","0.4");
+});
+
 	
 
 });

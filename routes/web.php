@@ -6,11 +6,21 @@ Route::get('/register','church\RegistrationController@sign_up')->name('registrat
 Route::post('/register','church\RegistrationController@add_member')->name('addMember');
 Route::post('/login','church\LoginController@login')->name('memberLogin');
 Route::post('/logout','church\LoginController@logout')->name('memberLogout');
-Route::get('/reset','church\ResetController@index')->name('resetPassword');
+
+
+//Password Reset stuffs
+Route::get('password/reset', 'church\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('password/email', 'church\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('password/reset/{token}', 'church\ResetPasswordController@showResetForm')->name('password.reset');
+Route::post('password/reset', 'church\ResetPasswordController@reset');
+
+
+
 
 
 //Profile Page Routes
 Route::get('/profile','church\ProfileController@index');
+Route::post('/profile/update-profile-picture','church\ProfileController@update_avatar')->name('profilePicture');
 
 Route::get('/profile/blog','church\profile\PostController@index');
 Route::post('/profile/blog','church\profile\PostController@store');
@@ -33,6 +43,7 @@ Route::get('/blog/testimonies','church\BlogController@testimonies');
 //Learning how to upload images
 
 Route::post('/image','ImageController@store');
+Route::get('/image','ImageController@show');
 
 
 /*

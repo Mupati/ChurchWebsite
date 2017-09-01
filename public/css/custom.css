@@ -126,15 +126,28 @@ html, body{
 }
 
 
+ li #avatar{
+ 	height: 32px;
+ 	width: 32px;
+ 	border-radius: 30%;
+}
+/*
+#avatar{
+	max-height: 200px;
+	max-width: 150px;
+}
 
 
 
 
 
+/*style for the profile
 
-
-
-
+#img:hover{
+	display: none;
+	color: red;
+}
+*/
 
 
 

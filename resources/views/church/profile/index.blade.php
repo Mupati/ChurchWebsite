@@ -13,11 +13,15 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-		<a class="navbar-brand" href="{{ route('homePage') }}">Wesley Methodist</a>
+		<div class="navbar-brand">
+			<a href="{{ route("homePage")}}">
+				<span class="glyphicon glyphicon-home">Wesley</span>
+			</a>
+		</div>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse">
 	<ul class="nav navbar-nav pull-right">
-			<li><a href="/profile">Profile</a></li>
+			<li><a href="/profile"><img src="{{$url}}" id="avatar">{{ $user->username }}</a></li>
 			<li><a href="/profile/blog">Blog</a></li>
 			<li><a href="/profile/forum">Forum</a></li>
 			<li><a href="/profile/store">Store</a></li>
@@ -41,11 +45,16 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-sm-3 col-md-3 col-lg-3 hidden-xs try">
-<!--<a href="#profilePic" title="Upload a Profile Picture" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Some content in Popover on right">
-	<img src="/img/pumba.jpg" alt="member-img" class="img-responsive img-rounded">
-</a>.-->
-
-<a href="#img"><img src="/img/pumba.jpg" class="img-responsive img-rounded"> </a>
+<a href="#"><img src="{{$url}}" class="img-responsive img-rounded" id="avatar"> </a>
+<form role="form" method="post" action="{{ route('profilePicture') }}" enctype="multipart/form-data">
+				{{ csrf_field() }}
+		<input type="hidden" name="id" value={{ $user->id }}>
+		<div class="form-group">
+			<label for="avatar">Change Profile Picture</label>
+			<input type="file" name="avatar" required>
+			</div>
+			<button type="submit" class="btn btn-block btn-success">Upload</button>
+		</form>
 
 				<div class="caption">
 					<h4>Description</h4>
@@ -54,9 +63,7 @@
 				     	</p>
 		    	</div>
 		</div>
-		<div id="img" title="Upload Profile Picture">
-
-		</div>
+	
 		<div class="news col-sm-9 col-md-9 col-lg-9">
 		 <h1>Load newsfeed here</h1>	
 		 <p>
@@ -71,8 +78,11 @@
 
 @endsection
 
+
+<!--
 @section('custom-scripts')
-<script type="text/javascript">
-	$(function () { $("[data-toggle='popover']").popover().tooltip(); });
+<script type="text/javascript"  src="/js/custom.js">
+/*$(function () { $("[data-toggle='popover']").popover().tooltip(); });*/
 </script>
 @endsection
+-->

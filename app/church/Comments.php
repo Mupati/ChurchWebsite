@@ -12,12 +12,12 @@ class Comments extends Model
     //means that a comment belongs to a post
     public function posts()
     {
-    	return $this->belongsTo(Posts::class);
+    	return $this->belongsTo(Posts::class,'posts_id');
     }
 
     public function member()
     {
-    	return $this->belongsTo(Membership::class);
+    	return $this->belongsTo(Membership::class,'memberships_id');
     }
 
 
