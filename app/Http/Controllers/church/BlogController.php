@@ -18,19 +18,22 @@ class BlogController extends Controller
 
     public function hymns()
     {
+        return "Hymnspiration soon to be generated";
     	return view('church/blog.index');
     }
 
 
 
     public function bio()
-    {
+    {   
+        return "Biography soon to be generated";
     	return view('church/blog.index');
     }
 
 
     public function testimonies()
-    {
+    {   
+        return "Testimonies soon to be generated";
     	return view('church/blog.index');
     }
 

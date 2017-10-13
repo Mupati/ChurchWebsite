@@ -1,7 +1,7 @@
 @extends('church.master')
 
 @section('title')
-	Welcome
+ Welcome to Your Profile Page
 @endsection
 
 @section('nav')

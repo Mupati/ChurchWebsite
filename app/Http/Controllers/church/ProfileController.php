@@ -52,11 +52,13 @@ class ProfileController extends Controller
 
      public function forum()
         {
+            return "This view is yet to be developed";
      	  return view('church/profile.blog');
         }
 
      public function store()
         {
+            return "This view is yet to be developed";
     	   return view('church/profile.blog');
         }
 

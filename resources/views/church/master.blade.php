@@ -1,4 +1,4 @@
-<!--For the Otk Project-->
+<!--For the Wesley Methodist Church Project-->
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -28,4 +28,3 @@
 
 </body>
 </html>
-

@@ -7,6 +7,8 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
+use App\church\Membership;
+
 class Welcome extends Mailable
 {
     use Queueable, SerializesModels;
@@ -16,9 +18,11 @@ class Welcome extends Mailable
      *
      * @return void
      */
+  //  public $member;
+
     public function __construct()
     {
-        //
+        //$this->member = $member;
     }
 
     /**
