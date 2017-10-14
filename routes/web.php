@@ -1,6 +1,8 @@
 <?php
 
 //Home page routes
+Route::get('/', 'church\HomeController@index')->name('homePage');
+
 Route::get('/index', 'church\HomeController@index')->name('homePage');
 Route::get('/register','church\RegistrationController@sign_up')->name('registrationForm');
 Route::post('/register','church\RegistrationController@add_member')->name('addMember');
