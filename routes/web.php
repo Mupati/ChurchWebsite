@@ -41,12 +41,12 @@ Route::get('/blog/testimonies','church\BlogController@testimonies');
 
 
 //Learning how to upload images
-
+/*
 Route::post('/image','ImageController@store');
 Route::get('/image','ImageController@show');
 
 
-/*
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -57,7 +57,7 @@ Route::get('/', function () {
 
 
 
-
+*/
 
 
 
