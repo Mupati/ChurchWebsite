@@ -1,5 +1,26 @@
 <?php
 
+
+    /* I added the following when configuring the postgresql with laravel and heroku application*/
+
+    $host = env('DB_HOST', '127.0.0.1');
+    $database = env('DB_DATABASE', '');
+    $username = env('DB_USERNAME', 'forge');
+    $password = env('DB_PASSWORD', 'forge');
+
+
+if($databaseUrl = getenv('DATABASE_URL')) {
+
+    $url = parse_url($databaseUrl);
+
+    $host = $url['host'];
+    $username = $url['user'];
+    $password = $url['pass'];
+    $database = substr($url['path'], 1);
+}
+   /* End of addition*/
+
+
 return [
 
     /*
@@ -53,8 +74,21 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+        /*I replaced the commented one below this one with the immediate one*/
+            'pgsql' => array(
+            'driver'   => 'pgsql',
+            'host'     => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
+            'sslmode' => 'prefer',
+           
+            ),
 
-        'pgsql' => [
+    /*    'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
@@ -66,7 +100,7 @@ return [
             'schema' => 'public',
             'sslmode' => 'prefer',
         ],
-
+*/
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'host' => env('DB_HOST', 'localhost'),
