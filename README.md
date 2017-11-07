@@ -1,3 +1,7 @@
+<head>
+ <meta charset='utf-8'>
+</head>
+
 <h1>Wesley Methodist Church</h1>
 <p>
 This is an experimental work of a lot of features I learnt with Laravel.<br>
