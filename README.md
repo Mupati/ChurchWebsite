@@ -1,4 +1,6 @@
-A website for a church built with Laravel.
-This is an experimental work of a lot of features I learnt with Laravel.
-Check <a href="wesleychurch.herokuapp.com"> Wesley Methodist Church</a>  to view what I have done so far.
-Not really appealing but learnt I've learnt a lot.
+<h1>Wesley Methodist Church</h1>
+<p>
+This is an experimental work of a lot of features I learnt with Laravel.<br>
+Check <a href="wesleychurch.herokuapp.com"><strong>Wesley Methodist Church</strong></a>  to view what I have done so far.
+<em>Not really appealing but learnt I've learnt a lot.</em>
+</p>
