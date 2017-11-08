@@ -6,5 +6,5 @@
 <p>
 This is an experimental work of a lot of features I learnt with Laravel.<br>
 Check <a href="wesleychurch.herokuapp.com"><strong>Wesley Methodist Church</strong></a>  to view what I have done so far.<br>
-<em>Not really appealing but learnt I've learnt a lot.:sweat_smile:</em>
+<em>Not really appealing but I've learnt a lot.:sweat_smile:</em>
 </p>
