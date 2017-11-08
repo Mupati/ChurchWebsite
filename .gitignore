@@ -9,3 +9,13 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 .env
+/resources/views/Vuejs/
+/resources/views/auth
+/resources/views/member
+/resources/views/otk
+/resources/views/partials
+/resources/views/posts
+/resources/views/layouts
+/resources/views/tasks
+/app/Http/Controllers/Auth
+
